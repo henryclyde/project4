@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="themeLink" rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <header class="header">
+        <div class="site-title">
+            <img src="img/code.png" style="width: auto; height:50px; margin: 0;" alt="Development icons created by Bharat Icons - Flaticon">
+            <h1>MyPortfolio</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('personal')">Personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="main">
+        <section id="home">
+            <div class="hero">
+                <div>
+                    <h1 id="homeTitle">Web Development Portfolio</h1>
+                    <h2>Henry Clyde</h2>
+                </div>
+                <div>
+                    <img id="heroCoding" src="img/coding.jpg" alt="Coding picture">
+                </div>
+            </div>
+            <br>
+            <p>Check out current projects I'm working on, or head to the <a href="#" onclick="showSection('contact')">Contact</a> page if you have any questions or want to connect!</p>
+            
+        </section>
+
+        <section id="projects" style="display:none;">
+            <h2>Projects</h2>
+            <p>Some of my recent development projects:</p>
+            <br>
+            <a href="https://henryclyde.github.io/jsCalculator/">iOS Calculator clone</a>
+            <br>
+            <img src="img/calculator.JPG" alt="IOS Calculator clone">
+        </section>
+
+        <section id="resume" style="display:none;">
+            <h2>Resume</h2>
+            <embed src="resume/Henry_Clyde_Resume.pdf" type="application/pdf"/>
+
+        </section>
+        
+        <section id="contact" style="display:none;">
+            <div id="contactFlex">
+                <div>
+                    <img src="img/phonebooth.jpg" alt="Phone Booth" id="phone-booth">
+                </div>
+                <div>  
+                    <h2>Contact</h2>
+                    <br>
+                    <p>Name: Henry Clyde</p>
+                    <p>Email: 10809725@uvu.edu</p>
+                    <p>Phone: (908) 219-9215</p>
+                    <p>Location: Orem, UT</p>
+
+                    <br>
+                    <h2>Profiles:</h2>
+                    <a href="https://www.linkedin.com/in/henry-c-4a2650124/">LinkedIn</a>
+                    <br>
+                    <br>
+                    <a href="https://github.com/henryclyde">Github</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="personal" style="display:none;">
+            <h2>Personal Interests</h2>
+            <p>I have a big interest in science and technology. I also am fascinated by space. The science of space and time dilation, and the sheer scale of the universe, has always struck me with wonder and amazement. Emerging technologies and what-if's for humanities future also fascinate me. A youtube channel that covers many areas of science, space, and technology, is called Kurzegat. Here's a recent video from them that I find interesting (and scary):</p>
+            <br>
+            <iframe src="http://www.youtube.com/embed/fa8k8IQ1_X0" frameborder="0" style="aspect-ratio: 16 / 9; width: 100%"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>This website was created by Henry Clyde</p>
+        <button id="themeToggle">Toggle Theme</button>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
